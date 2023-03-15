@@ -19,7 +19,7 @@ public class VigenereCipherTester {
     @Test
     public void testConstructorAlphabet() {
         VigenereCipher vigenereCipher = new VigenereCipher("lemon");
-        assertEquals("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", vigenereCipher.getAlphabet(), "Ensure that your constructor has been implemented correctly!");
+        assertEquals("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", vigenereCipher.getStandardalphabet(), "Ensure that your constructor has been implemented correctly!");
     }
 
     @Test
@@ -33,7 +33,7 @@ public class VigenereCipherTester {
     public void testEncodeDoesntEncodeNonAlphabetCharacters() {
         VigenereCipher vigenereCipher = new VigenereCipher("lemon");
         String encodedText = vigenereCipher.encode("hello,world");
-        assertEquals("sixzb,aafyo", encodedText, "Ensure that your encode method has been implemented correctly! The character in the key should not be encoded if it is a not a letter in the English alphabet and the corresponding character in the key should be skipped.");
+        assertEquals("sixzb,hsdzq", encodedText, "Ensure that your encode method has been implemented correctly! The character in the key should not be encoded if it is a not a letter in the English alphabet and the corresponding character in the key should be skipped.");
     }
 
     @Test
